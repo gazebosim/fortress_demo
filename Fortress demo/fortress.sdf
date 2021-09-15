@@ -1,0 +1,337 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="Fortress">
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.005</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <plugin
+      filename="ignition-gazebo-physics-system"
+      name="ignition::gazebo::systems::Physics">
+    </plugin>
+    <plugin
+      filename="ignition-gazebo-sensors-system"
+      name="ignition::gazebo::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin
+      filename="ignition-gazebo-user-commands-system"
+      name="ignition::gazebo::systems::UserCommands">
+    </plugin>
+    <plugin
+      filename="ignition-gazebo-scene-broadcaster-system"
+      name="ignition::gazebo::systems::SceneBroadcaster">
+    </plugin>
+
+    <scene>
+      <grid>false</grid>
+    </scene>
+
+    <!-- Saint-Guillhem-le-Désert -->
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <world_frame_orientation>ENU</world_frame_orientation>
+      <latitude_deg>43.7344</latitude_deg>
+      <longitude_deg>3.5490</longitude_deg>
+      <elevation>54</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+
+    <gui>
+
+      <!-- 3D scene -->
+      <plugin filename="GzScene3D" name="3D View">
+        <ignition-gui>
+          <title>3D View</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">docked</property>
+        </ignition-gui>
+
+        <engine>ogre2</engine>
+        <scene>scene</scene>
+        <ambient_light>0.4 0.4 0.4</ambient_light>
+        <background_color>0.8 0.8 0.8</background_color>
+        <sky></sky>
+        <camera_pose>28.186 14.29 8.28 0 0.3 -2.8</camera_pose>
+      </plugin>
+
+      <!-- Play / pause / step -->
+      <plugin filename="WorldControl" name="World control">
+        <ignition-gui>
+          <title>World control</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="height">72</property>
+          <property type="double" key="width">121</property>
+          <property type="double" key="z">1</property>
+
+          <property type="string" key="state">floating</property>
+          <anchors target="3D View">
+            <line own="left" target="left"/>
+            <line own="bottom" target="bottom"/>
+          </anchors>
+        </ignition-gui>
+
+        <play_pause>true</play_pause>
+        <step>true</step>
+        <start_paused>true</start_paused>
+
+      </plugin>
+
+      <!-- Time / RTF -->
+      <plugin filename="WorldStats" name="World stats">
+        <ignition-gui>
+          <title>World stats</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="height">110</property>
+          <property type="double" key="width">290</property>
+          <property type="double" key="z">1</property>
+
+          <property type="string" key="state">floating</property>
+          <anchors target="3D View">
+            <line own="right" target="right"/>
+            <line own="bottom" target="bottom"/>
+          </anchors>
+        </ignition-gui>
+
+        <sim_time>true</sim_time>
+        <real_time>true</real_time>
+        <real_time_factor>true</real_time_factor>
+        <iterations>true</iterations>
+
+      </plugin>
+
+      <!-- Insert simple shapes -->
+      <plugin filename="Shapes" name="Shapes">
+        <ignition-gui>
+          <property key="resizable" type="bool">false</property>
+          <property key="x" type="double">0</property>
+          <property key="y" type="double">0</property>
+          <property key="width" type="double">250</property>
+          <property key="height" type="double">50</property>
+          <property key="state" type="string">floating</property>
+          <property key="showTitleBar" type="bool">false</property>
+          <property key="cardBackground" type="string">#666666</property>
+        </ignition-gui>
+      </plugin>
+
+      <!-- Insert lights -->
+      <plugin filename="Lights" name="Lights">
+        <ignition-gui>
+          <property key="resizable" type="bool">false</property>
+          <property key="x" type="double">250</property>
+          <property key="y" type="double">0</property>
+          <property key="width" type="double">150</property>
+          <property key="height" type="double">50</property>
+          <property key="state" type="string">floating</property>
+          <property key="showTitleBar" type="bool">false</property>
+          <property key="cardBackground" type="string">#666666</property>
+        </ignition-gui>
+      </plugin>
+
+      <!-- Translate / rotate -->
+      <plugin filename="TransformControl" name="Transform control">
+        <ignition-gui>
+          <property key="resizable" type="bool">false</property>
+          <property key="x" type="double">0</property>
+          <property key="y" type="double">50</property>
+          <property key="width" type="double">250</property>
+          <property key="height" type="double">50</property>
+          <property key="state" type="string">floating</property>
+          <property key="showTitleBar" type="bool">false</property>
+          <property key="cardBackground" type="string">#777777</property>
+        </ignition-gui>
+      </plugin>
+
+      <!-- Screenshot -->
+      <plugin filename="Screenshot" name="Screenshot">
+        <ignition-gui>
+          <property key="resizable" type="bool">false</property>
+          <property key="x" type="double">250</property>
+          <property key="y" type="double">50</property>
+          <property key="width" type="double">50</property>
+          <property key="height" type="double">50</property>
+          <property key="state" type="string">floating</property>
+          <property key="showTitleBar" type="bool">false</property>
+          <property key="cardBackground" type="string">#777777</property>
+        </ignition-gui>
+      </plugin>
+
+      <!-- Inspector -->
+      <plugin filename="ComponentInspector" name="Component inspector">
+        <ignition-gui>
+          <property type="string" key="state">docked_collapsed</property>
+        </ignition-gui>
+      </plugin>
+
+      <!-- Entity tree -->
+      <plugin filename="EntityTree" name="Entity tree">
+        <ignition-gui>
+          <property type="string" key="state">docked_collapsed</property>
+        </ignition-gui>
+      </plugin>
+
+      <plugin filename="Plot3D" name="Plot 3D">
+        <ignition-gui>
+          <property type="string" key="state">docked_collapsed</property>
+        </ignition-gui>
+        <entity_name>tethys</entity_name>
+        <color>0 0 1</color>
+        <maximum_points>10000</maximum_points>
+        <minimum_distance>0.5</minimum_distance>
+      </plugin>
+
+      <plugin filename="ViewAngle" name="View angle">
+        <ignition-gui>
+          <property type="string" key="state">docked_collapsed</property>
+        </ignition-gui>
+      </plugin>
+
+    </gui>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.8 0.8 0.8 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <include>
+      <uri>
+        Fortress island
+      </uri>
+    </include>
+
+    <!--TODO model name="turbidity_generator">
+        <pose>0 0 0 0 0 0</pose>
+        <static>true</static>
+        <link name="turbidity_link">
+            <particle_emitter name="emitter" type="point">
+                <pose>0 0 -12 0 0 0</pose>
+                <emitting>true</emitting>
+                <size>100 100 20</size>
+                <particle_size>100 100 20</particle_size>
+                <lifetime>10</lifetime>
+                <min_velocity>0</min_velocity>
+                <max_velocity>1</max_velocity>
+                <color_start>0 0.4 0.5 0.2</color_start>
+                <color_end>0 0.8 0.9 0.2</color_end>
+                <scale_rate>1</scale_rate>
+                <rate>1</rate>
+                <material>
+                    <diffuse>0.7 0.7 0.7 0.5</diffuse>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/smoke.png</albedo_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </particle_emitter>
+        </link>
+    </model-->
+
+    <include>
+      <name>tethys</name>
+      <pose>30 30 -10 0 0 0</pose>
+      <uri>https://fuel.ignitionrobotics.org/1.0/accurrent/models/MBARI Tethys LRAUV</uri>
+
+      <!-- Joint controllers -->
+      <plugin
+        filename="ignition-gazebo-joint-position-controller-system"
+        name="ignition::gazebo::systems::JointPositionController">
+        <joint_name>horizontal_fins_joint</joint_name>
+        <p_gain>0.1</p_gain>
+      </plugin>
+
+      <plugin
+        filename="ignition-gazebo-joint-position-controller-system"
+        name="ignition::gazebo::systems::JointPositionController">
+        <joint_name>vertical_fins_joint</joint_name>
+        <p_gain>0.1</p_gain>
+      </plugin>
+
+      <plugin
+        filename="ignition-gazebo-thruster-system"
+        name="ignition::gazebo::systems::Thruster">
+        <namespace>tethys</namespace>
+        <joint_name>propeller_joint</joint_name>
+        <thrust_coefficient>0.004422</thrust_coefficient>
+        <fluid_density>1000</fluid_density>
+        <propeller_diameter>0.2</propeller_diameter>
+      </plugin>
+
+      <!-- Lift and drag -->
+
+      <!-- Vertical fin -->
+      <plugin
+        filename="ignition-gazebo-lift-drag-system"
+        name="ignition::gazebo::systems::LiftDrag">
+        <air_density>1000</air_density>
+        <cla>4.13</cla>
+        <cla_stall>-1.1</cla_stall>
+        <cda>0.2</cda>
+        <cda_stall>0.03</cda_stall>
+        <alpha_stall>0.17</alpha_stall>
+        <a0>0</a0>
+        <area>0.0244</area>
+        <upward>0 1 0</upward>
+        <forward>1 0 0</forward>
+        <link_name>vertical_fins</link_name>
+        <cp>0 0 0</cp>
+      </plugin>
+
+      <!-- Horizontal fin -->
+      <plugin
+        filename="ignition-gazebo-lift-drag-system"
+        name="ignition::gazebo::systems::LiftDrag">
+        <air_density>1000</air_density>
+        <cla>4.13</cla>
+        <cla_stall>-1.1</cla_stall>
+        <cda>0.2</cda>
+        <cda_stall>0.03</cda_stall>
+        <alpha_stall>0.17</alpha_stall>
+        <a0>0</a0>
+        <area>0.0244</area>
+        <upward>0 0 1</upward>
+        <forward>1 0 0</forward>
+        <link_name>horizontal_fins</link_name>
+        <cp>0 0 0</cp>
+      </plugin>
+
+      <plugin
+        filename="ignition-gazebo-hydrodynamics-system"
+        name="ignition::gazebo::systems::Hydrodynamics">
+        <link_name>base_link</link_name>
+        <xDotU>-4.876161</xDotU>
+        <yDotV>-126.324739</yDotV>
+        <zDotW>-126.324739</zDotW>
+        <kDotP>0</kDotP>
+        <mDotQ>-33.46</mDotQ>
+        <nDotR>-33.46</nDotR>
+        <xUU>-6.2282</xUU>
+        <xU>0</xU>
+        <yVV>-601.27</yVV>
+        <yV>0</yV>
+        <zWW>-601.27</zWW>
+        <zW>0</zW>
+        <kPP>-0.1916</kPP>
+        <kP>0</kP>
+        <mQQ>-632.698957</mQQ>
+        <mQ>0</mQ>
+        <nRR>-632.698957</nRR>
+        <nR>0</nR>
+      </plugin>
+
+    </include>
+
+  </world>
+</sdf>

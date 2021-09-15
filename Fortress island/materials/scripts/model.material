@@ -1,0 +1,846 @@
+
+material UrbanTile/cityScene_ground03_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture cityScene_ground03_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/prop_MainTree_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture prop_MainTree_diffuse.png
+        }
+      }
+    }
+  }
+material UrbanTile/Prop_VisitCard_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Prop_VisitCard_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/Prop_Dumpster_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Prop_Dumpster_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/Prop_MainFountain_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Prop_MainFountain_diffuse.png
+        }
+      }
+    }
+  }
+material UrbanTile/Prop_TabacSign_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Prop_TabacSign_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/Prop_MenuCard_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Prop_MenuCard_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/Prop_BycicleShed_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Prop_BycicleShed_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/Prop_BenchResto_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Prop_BenchResto_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/prop_Bike_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture prop_Bike_diffuse.png
+        }
+      }
+    }
+  }
+material UrbanTile/Prop_GarbageCan_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Prop_GarbageCan_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/Prop_PaintersEasel_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Prop_PaintersEasel_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/Prop_plant1_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Prop_plant1_diffuse.png
+        }
+      }
+    }
+  }
+material UrbanTile/Prop_Parasol_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Prop_Parasol_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/prop_TrashSac_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture prop_TrashSac_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/cityScene_ground02_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture cityScene_ground02_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/cityScene_unique_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture cityScene_unique_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/cityScene_wall_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture cityScene_wall_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/house_restoUniqueOppacity_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_restoUniqueOppacity_diffuse.png
+        }
+      }
+    }
+  }
+material UrbanTile/Prop_Table1_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Prop_Table1_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/Prop_Chair_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Prop_Chair_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/Prop_Bench_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Prop_Bench_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/prop_satelite2_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture prop_satelite2_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/prop_sateliet1_diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture prop_sateliet1_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/prop_barSignChain_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture prop_barSignChain_diffuse.png
+        }
+      }
+    }
+  }
+material UrbanTile/house_BaRWall_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_BaRWall_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/prop_WallLantern_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture prop_WallLantern_diffuse.png
+        }
+      }
+    }
+  }
+material UrbanTile/house_restoTrim_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_restoTrim_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/Prop_Paintings_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Prop_Paintings_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/house_barTrim_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_barTrim_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/house_atelierRoof_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_atelierRoof_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/house_atelierWall_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_atelierWall_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/house_Creperie_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_Creperie_diffuse.png
+        }
+      }
+    }
+  }
+material UrbanTile/house_atelierTrim_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_atelierTrim_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/house_RestoHutchWall_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_RestoHutchWall_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/house_atelier_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_atelier_diffuse.png
+        }
+      }
+    }
+  }
+material UrbanTile/house_RestoInside_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_RestoInside_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/house_CreperieWall_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_CreperieWall_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/house_CreperieRoof_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_CreperieRoof_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/house_CreperieTrim_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_CreperieTrim_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/Prop_airCo_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Prop_airCo_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/prop_StreetLantern_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture prop_StreetLantern_diffuse.png
+        }
+      }
+    }
+  }
+material UrbanTile/Prop_TableOne_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Prop_TableOne_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/Prop_Fence_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Prop_Fence_diffuse.png
+        }
+      }
+    }
+  }
+material UrbanTile/cityScene_ground_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture cityScene_ground_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/Prop_FlowerBank_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Prop_FlowerBank_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/Prop_FlowerBankFlowers_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Prop_FlowerBankFlowers_diffuse.png
+        }
+      }
+    }
+  }
+material UrbanTile/Prop_Barrel_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Prop_Barrel_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/cityScene_trim_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture cityScene_trim_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/house_RestoRood_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_RestoRood_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/house_RestoWall_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_RestoWall_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/house_RestoHutchRoof_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_RestoHutchRoof_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/house_RestoWall02_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_RestoWall02_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/cityScene_Decal_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture cityScene_decals_diffuse.png
+        }
+      }
+    }
+  }
+material UrbanTile/prop_barSign_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture prop_barSign_diffuse.png
+        }
+      }
+    }
+  }
+material UrbanTile/house_bar_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_bar_diffuse.png
+        }
+      }
+    }
+  }
+material UrbanTile/house_bar02_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_bar02_diffuse.png
+        }
+      }
+    }
+  }
+material UrbanTile/house_BaRWall02_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_BaRWall02_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/house_BarRoof_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_BarRoof_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/house_creperiePlants_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_creperiePlants_diffuse.png
+        }
+      }
+    }
+  }
+material UrbanTile/house_atelierPlants_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_atelierPlants_diffuse.png
+        }
+      }
+    }
+  }
+material UrbanTile/house_atelierWallInside_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_atelierWallInside_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/house_atelierFloor_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_atelierFloor_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/house_resto_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture house_resto_diffuse.jpeg
+        }
+      }
+    }
+  }
+material UrbanTile/prop_plant2_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture prop_plant2_diffuse.png
+        }
+      }
+    }
+  }

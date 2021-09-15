@@ -1,0 +1,1752 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="Fortress scene">
+    <static>true</static>
+    <link name="base_link">
+      <collision name="collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name= "cityScene_ground03_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>cityScene_ground03</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/cityScene_ground03_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/cityScene_ground03_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "prop_MainTree_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_MainTree</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_MainTree_diffuse.png</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/prop_MainTree_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Prop_VisitCard_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_VisitCard</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_VisitCard_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/Prop_VisitCard_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Prop_Dumpster_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Dumpster</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Dumpster_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/Prop_Dumpster_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Prop_MainFountain_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_MainFountain</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_MainFountain_diffuse.png</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/Prop_MainFountain_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Prop_TabacSign_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_TabacSign</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_TabacSign_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/Prop_TabacSign_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Prop_MenuCard_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_MenuCard</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_MenuCard_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/Prop_MenuCard_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Prop_BycicleShed_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_BycicleShed</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_BycicleShed_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/Prop_BycicleShed_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Prop_BenchResto_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_BenchResto</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_BenchResto_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/Prop_BenchResto_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "prop_Bike_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_Bike</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_Bike_diffuse.png</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/prop_Bike_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Prop_GarbageCan_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_GarbageCan</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_GarbageCan_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/Prop_GarbageCan_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Prop_PaintersEasel_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_PaintersEasel</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_PaintersEasel_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/Prop_PaintersEasel_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Prop_plant1_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_plant1</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_plant1_diffuse.png</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/Prop_plant1_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Prop_Parasol_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Parasol</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Parasol_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/Prop_Parasol_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "prop_TrashSac_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_TrashSac</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_TrashSac_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/prop_TrashSac_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "cityScene_ground02_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>cityScene_ground02</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/cityScene_ground02_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/cityScene_ground02_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "cityScene_unique_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>cityScene_unique</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/cityScene_unique_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/cityScene_unique_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "cityScene_wall_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>cityScene_wall</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/cityScene_wall_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/cityScene_wall_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_restoUniqueOppacity_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_restoUniqueOppacity</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_restoUniqueOppacity_diffuse.png</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_restoUniqueOppacity_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Prop_Table1_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Table1</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Table1_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/Prop_Table1_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/Prop_Chair_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Prop_Bench_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Bench</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Bench_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/Prop_Bench_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "prop_satelite2_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_satelite2</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_satelite2_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/prop_satelite2_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "prop_sateliet1_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_sateliet1</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_sateliet1_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/prop_sateliet1_diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "prop_barSignChain_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_barSignChain</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_barSignChain_diffuse.png</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/prop_barSignChain_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_BaRWall_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_BaRWall</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_BaRWall_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_BaRWall_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "prop_WallLantern_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_WallLantern</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_WallLantern_diffuse.png</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/prop_WallLantern_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_restoTrim_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_restoTrim</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_restoTrim_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_restoTrim_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Prop_Paintings_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Paintings</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Paintings_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/Prop_Paintings_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_barTrim_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_barTrim</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_barTrim_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_barTrim_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_atelierRoof_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_atelierRoof</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_atelierRoof_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_atelierRoof_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_atelierWall_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_atelierWall</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_atelierWall_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_atelierWall_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_Creperie_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_Creperie</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_Creperie_diffuse.png</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_Creperie_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_atelierTrim_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_atelierTrim</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_atelierTrim_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_atelierTrim_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_RestoHutchWall_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_RestoHutchWall</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_RestoHutchWall_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_RestoHutchWall_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_atelier_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_atelier</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_atelier_diffuse.png</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_atelier_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_RestoInside_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_RestoInside</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_RestoInside_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_RestoInside_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_CreperieWall_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_CreperieWall</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_CreperieWall_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_CreperieWall_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_CreperieRoof_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_CreperieRoof</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_CreperieRoof_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_CreperieRoof_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_CreperieTrim_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_CreperieTrim</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_CreperieTrim_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_CreperieTrim_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Prop_airCo_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_airCo</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_airCo_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/Prop_airCo_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "prop_StreetLantern_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_StreetLantern</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_StreetLantern_diffuse.png</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/prop_StreetLantern_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Prop_TableOne_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_TableOne</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_TableOne_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/Prop_TableOne_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Prop_Fence_diffuse_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Fence_diffuse</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Fence_diffuse.png</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/Prop_Fence_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "cityScene_ground_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>cityScene_ground</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/cityScene_ground_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/cityScene_ground_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Prop_FlowerBank_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_FlowerBank</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_FlowerBank_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/Prop_FlowerBank_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Prop_FlowerBankFlowers_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_FlowerBankFlowers</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_FlowerBankFlowers_diffuse.png</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/Prop_FlowerBankFlowers_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Prop_Barrel_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Barrel</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Barrel_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/Prop_Barrel_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "cityScene_trim_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>cityScene_trim</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/cityScene_trim_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/cityScene_trim_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_RestoRood_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_RestoRood</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_RestoRood_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_RestoRood_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_RestoWall_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_RestoWall</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_RestoWall_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_RestoWall_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_RestoHutchRoof_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_RestoHutchRoof</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_RestoHutchRoof_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_RestoHutchRoof_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_RestoWall02_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_RestoWall02</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_RestoWall02_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_RestoWall02_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "cityScene_Decal_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>cityScene_Decal</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/cityScene_decals_diffuse.png</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/cityScene_Decal_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "prop_barSign_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_barSign</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_barSign_diffuse.png</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/prop_barSign_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_bar_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_bar</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_bar_diffuse.png</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_bar_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_bar02_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_bar02</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_bar02_diffuse.png</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_bar02_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_BaRWall02_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_BaRWall02</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_BaRWall02_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_BaRWall02_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_BarRoof_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_BarRoof</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_BarRoof_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_BarRoof_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_creperiePlants_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_creperiePlants</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_creperiePlants_diffuse.png</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_creperiePlants_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_atelierPlants_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_atelierPlants</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_atelierPlants_diffuse.png</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_atelierPlants_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_atelierWallInside_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_atelierWallInside</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_atelierWallInside_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_atelierWallInside_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_atelierFloor_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_atelierFloor</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_atelierFloor_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_atelierFloor_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "house_resto_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_resto</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_resto_diffuse.jpeg</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/house_resto_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "prop_plant2_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_plant2</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_plant2_diffuse.png</albedo_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>materials/scripts/</uri>
+            <uri>materials/textures/</uri>
+            <name>UrbanTile/prop_plant2_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Border_Border_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Border_Border</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Border_Border_BaseColor.png</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Water_Water_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Water_Water</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Water_Water_BaseColor.png</albedo_map>
+              <normal_map>materials/textures/Water_Water_Normal.png</normal_map>
+              <!--roughness_map>materials/textures/Water_Water_Roughness.png</roughness_map-->
+              <environment_map>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/Reflective table/1/files/materials/textures/DepotEnvMap.dds</environment_map>
+              <roughness>0</roughness>
+              <metalness>0</metalness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
