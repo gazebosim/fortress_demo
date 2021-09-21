@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <sdf version="1.6">
-  <model name="Fortress scene">
+  <model name="cityScene">
     <static>true</static>
     <link name="base_link">
       <collision name="collision">
@@ -12,12 +12,12 @@
           </mesh>
         </geometry>
       </collision>
-      <visual name= "cityScene_ground03_visual">
+      <visual name= "Water_visual">
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
             <submesh>
-              <name>cityScene_ground03</name>
+              <name>Water</name>
               <center>false</center>
             </submesh>
           </mesh>
@@ -27,1687 +27,20 @@
           <specular>1.0 1.0 1.0</specular>
           <pbr>
             <metal>
-              <albedo_map>materials/textures/cityScene_ground03_diffuse.jpeg</albedo_map>
+              <albedo>0 0 1 1</albedo>
+              <normal_map>materials/textures/Water_Normal.jpg</normal_map>
+              <metalness>0</metalness>
+              <roughness>0</roughness>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/cityScene_ground03_Diffuse</name>
-          </script>
         </material>
       </visual>
-      <visual name= "prop_MainTree_visual">
+      <visual name= "Border_Border_BaseColor004_visual">
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
             <submesh>
-              <name>prop_MainTree</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/prop_MainTree_diffuse.png</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/prop_MainTree_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Prop_VisitCard_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Prop_VisitCard</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/Prop_VisitCard_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/Prop_VisitCard_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Prop_Dumpster_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Prop_Dumpster</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/Prop_Dumpster_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/Prop_Dumpster_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Prop_MainFountain_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Prop_MainFountain</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/Prop_MainFountain_diffuse.png</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/Prop_MainFountain_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Prop_TabacSign_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Prop_TabacSign</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/Prop_TabacSign_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/Prop_TabacSign_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Prop_MenuCard_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Prop_MenuCard</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/Prop_MenuCard_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/Prop_MenuCard_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Prop_BycicleShed_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Prop_BycicleShed</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/Prop_BycicleShed_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/Prop_BycicleShed_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Prop_BenchResto_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Prop_BenchResto</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/Prop_BenchResto_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/Prop_BenchResto_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "prop_Bike_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>prop_Bike</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/prop_Bike_diffuse.png</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/prop_Bike_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Prop_GarbageCan_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Prop_GarbageCan</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/Prop_GarbageCan_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/Prop_GarbageCan_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Prop_PaintersEasel_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Prop_PaintersEasel</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/Prop_PaintersEasel_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/Prop_PaintersEasel_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Prop_plant1_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Prop_plant1</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/Prop_plant1_diffuse.png</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/Prop_plant1_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Prop_Parasol_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Prop_Parasol</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/Prop_Parasol_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/Prop_Parasol_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "prop_TrashSac_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>prop_TrashSac</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/prop_TrashSac_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/prop_TrashSac_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "cityScene_ground02_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>cityScene_ground02</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/cityScene_ground02_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/cityScene_ground02_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "cityScene_unique_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>cityScene_unique</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/cityScene_unique_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/cityScene_unique_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "cityScene_wall_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>cityScene_wall</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/cityScene_wall_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/cityScene_wall_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_restoUniqueOppacity_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_restoUniqueOppacity</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_restoUniqueOppacity_diffuse.png</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_restoUniqueOppacity_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Prop_Table1_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Prop_Table1</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/Prop_Table1_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/Prop_Table1_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Prop_Chair_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Prop_Chair</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/Prop_Chair_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/Prop_Chair_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Prop_Bench_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Prop_Bench</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/Prop_Bench_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/Prop_Bench_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "prop_satelite2_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>prop_satelite2</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/prop_satelite2_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/prop_satelite2_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "prop_sateliet1_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>prop_sateliet1</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/prop_sateliet1_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/prop_sateliet1_diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "prop_barSignChain_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>prop_barSignChain</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/prop_barSignChain_diffuse.png</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/prop_barSignChain_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_BaRWall_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_BaRWall</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_BaRWall_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_BaRWall_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "prop_WallLantern_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>prop_WallLantern</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/prop_WallLantern_diffuse.png</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/prop_WallLantern_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_restoTrim_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_restoTrim</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_restoTrim_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_restoTrim_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Prop_Paintings_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Prop_Paintings</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/Prop_Paintings_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/Prop_Paintings_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_barTrim_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_barTrim</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_barTrim_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_barTrim_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_atelierRoof_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_atelierRoof</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_atelierRoof_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_atelierRoof_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_atelierWall_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_atelierWall</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_atelierWall_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_atelierWall_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_Creperie_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_Creperie</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_Creperie_diffuse.png</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_Creperie_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_atelierTrim_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_atelierTrim</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_atelierTrim_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_atelierTrim_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_RestoHutchWall_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_RestoHutchWall</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_RestoHutchWall_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_RestoHutchWall_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_atelier_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_atelier</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_atelier_diffuse.png</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_atelier_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_RestoInside_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_RestoInside</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_RestoInside_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_RestoInside_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_CreperieWall_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_CreperieWall</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_CreperieWall_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_CreperieWall_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_CreperieRoof_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_CreperieRoof</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_CreperieRoof_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_CreperieRoof_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_CreperieTrim_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_CreperieTrim</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_CreperieTrim_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_CreperieTrim_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Prop_airCo_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Prop_airCo</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/Prop_airCo_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/Prop_airCo_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "prop_StreetLantern_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>prop_StreetLantern</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/prop_StreetLantern_diffuse.png</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/prop_StreetLantern_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Prop_TableOne_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Prop_TableOne</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/Prop_TableOne_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/Prop_TableOne_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Prop_Fence_diffuse_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Prop_Fence_diffuse</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/Prop_Fence_diffuse.png</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/Prop_Fence_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "cityScene_ground_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>cityScene_ground</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/cityScene_ground_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/cityScene_ground_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Prop_FlowerBank_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Prop_FlowerBank</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/Prop_FlowerBank_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/Prop_FlowerBank_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Prop_FlowerBankFlowers_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Prop_FlowerBankFlowers</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/Prop_FlowerBankFlowers_diffuse.png</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/Prop_FlowerBankFlowers_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Prop_Barrel_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Prop_Barrel</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/Prop_Barrel_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/Prop_Barrel_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "cityScene_trim_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>cityScene_trim</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/cityScene_trim_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/cityScene_trim_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_RestoRood_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_RestoRood</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_RestoRood_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_RestoRood_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_RestoWall_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_RestoWall</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_RestoWall_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_RestoWall_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_RestoHutchRoof_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_RestoHutchRoof</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_RestoHutchRoof_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_RestoHutchRoof_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_RestoWall02_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_RestoWall02</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_RestoWall02_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_RestoWall02_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "cityScene_Decal_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>cityScene_Decal</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/cityScene_decals_diffuse.png</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/cityScene_Decal_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "prop_barSign_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>prop_barSign</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/prop_barSign_diffuse.png</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/prop_barSign_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_bar_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_bar</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_bar_diffuse.png</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_bar_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_bar02_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_bar02</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_bar02_diffuse.png</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_bar02_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_BaRWall02_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_BaRWall02</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_BaRWall02_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_BaRWall02_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_BarRoof_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_BarRoof</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_BarRoof_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_BarRoof_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_creperiePlants_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_creperiePlants</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_creperiePlants_diffuse.png</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_creperiePlants_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_atelierPlants_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_atelierPlants</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_atelierPlants_diffuse.png</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_atelierPlants_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_atelierWallInside_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_atelierWallInside</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_atelierWallInside_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_atelierWallInside_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_atelierFloor_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_atelierFloor</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_atelierFloor_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_atelierFloor_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "house_resto_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>house_resto</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/house_resto_diffuse.jpeg</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/house_resto_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "prop_plant2_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>prop_plant2</name>
-              <center>false</center>
-            </submesh>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>materials/textures/prop_plant2_diffuse.png</albedo_map>
-            </metal>
-          </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
-            <name>UrbanTile/prop_plant2_Diffuse</name>
-          </script>
-        </material>
-      </visual>
-      <visual name= "Border_Border_visual">
-        <geometry>
-          <mesh>
-            <uri>meshes/cityscene.dae</uri>
-            <submesh>
-              <name>Border_Border</name>
+              <name>Border_Border_BaseColor004</name>
               <center>false</center>
             </submesh>
           </mesh>
@@ -1718,16 +51,20 @@
           <pbr>
             <metal>
               <albedo_map>materials/textures/Border_Border_BaseColor.png</albedo_map>
+              <roughness_map>materials/textures/Border_Border_Roughness.png</roughness_map>
+              <normal_map>materials/textures/Border_Border_Normal.png</normal_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
             </metal>
           </pbr>
         </material>
       </visual>
-      <visual name= "Water_Water_visual">
+      <visual name= "cityScene_decals_diffuse001_visual">
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
             <submesh>
-              <name>Water_Water</name>
+              <name>cityScene_decals_diffuse001</name>
               <center>false</center>
             </submesh>
           </mesh>
@@ -1737,12 +74,2891 @@
           <specular>1.0 1.0 1.0</specular>
           <pbr>
             <metal>
-              <albedo_map>materials/textures/Water_Water_BaseColor.png</albedo_map>
-              <normal_map>materials/textures/Water_Water_Normal.png</normal_map>
-              <!--roughness_map>materials/textures/Water_Water_Roughness.png</roughness_map-->
-              <environment_map>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/Reflective table/1/files/materials/textures/DepotEnvMap.dds</environment_map>
-              <roughness>0</roughness>
+              <albedo_map>materials/textures/cityScene_decals_diffuse.png</albedo_map>
               <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "cityScene_ground_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>cityScene_ground_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/cityScene_ground_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "cityScene_ground02_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>cityScene_ground02_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/cityScene_ground02_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "cityScene_ground03_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>cityScene_ground03_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/cityScene_ground03_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "cityScene_trim_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>cityScene_trim_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/cityScene_trim_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "cityScene_unique_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>cityScene_unique_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/cityScene_unique_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "cityScene_wall_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>cityScene_wall_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/cityScene_wall_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_atelier_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_atelier_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_atelier_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_atelierFloor_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_atelierFloor_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_atelierFloor_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_atelierPlants_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_atelierPlants_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_atelierPlants_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_atelierRoof_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_atelierRoof_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_atelierRoof_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_atelierTrim_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_atelierTrim_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_atelierTrim_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_atelierWall_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_atelierWall_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_atelierWall_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_atelierWallInside_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_atelierWallInside_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_atelierWallInside_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_bar_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_bar_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_bar_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_bar02_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_bar02_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_bar02_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_BarRoof_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_BarRoof_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_BarRoof_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_barTrim_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_barTrim_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_barTrim_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_BaRWall_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_BaRWall_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_BaRWall_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_BaRWall02_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_BaRWall02_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_BaRWall02_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_Creperie_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_Creperie_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_Creperie_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_creperiePlants_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_creperiePlants_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_creperiePlants_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_CreperieRoof_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_CreperieRoof_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_CreperieRoof_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_CreperieTrim_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_CreperieTrim_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_CreperieTrim_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_CreperieWall_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_CreperieWall_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_CreperieWall_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_resto_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_resto_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_resto_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_RestoHutchRoof_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_RestoHutchRoof_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_RestoHutchRoof_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_RestoHutchWall_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_RestoHutchWall_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_RestoHutchWall_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_RestoInside_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_RestoInside_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_RestoInside_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_RestoRood_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_RestoRood_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_RestoRood_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_restoTrim_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_restoTrim_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_restoTrim_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_restoUniqueOppacity_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_restoUniqueOppacity_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_restoUniqueOppacity_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_RestoWall_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_RestoWall_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_RestoWall_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "house_RestoWall02_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>house_RestoWall02_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/house_RestoWall02_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_airCo_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_airCo_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_airCo_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_airCo_diffuse002_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_airCo_diffuse002</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_airCo_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_airCo_diffuse003_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_airCo_diffuse003</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_airCo_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_airCo_diffuse004_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_airCo_diffuse004</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_airCo_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Barrel_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Barrel_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Barrel_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Barrel_diffuse002_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Barrel_diffuse002</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Barrel_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Barrel_diffuse003_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Barrel_diffuse003</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Barrel_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "prop_barSign_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_barSign_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_barSign_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "prop_barSignChain_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_barSignChain_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_barSignChain_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Bench_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Bench_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Bench_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Bench_diffuse002_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Bench_diffuse002</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Bench_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Bench_diffuse003_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Bench_diffuse003</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Bench_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Bench_diffuse004_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Bench_diffuse004</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Bench_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_BenchResto_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_BenchResto_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_BenchResto_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_BenchResto_diffuse002_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_BenchResto_diffuse002</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_BenchResto_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_BenchResto_diffuse003_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_BenchResto_diffuse003</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_BenchResto_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_BenchResto_diffuse004_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_BenchResto_diffuse004</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_BenchResto_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_BenchResto_diffuse005_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_BenchResto_diffuse005</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_BenchResto_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_BenchResto_diffuse006_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_BenchResto_diffuse006</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_BenchResto_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "prop_Bike_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_Bike_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_Bike_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_BycicleShed_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_BycicleShed_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_BycicleShed_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_diffuse002_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair_diffuse002</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_diffuse003_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair_diffuse003</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_diffuse004_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair_diffuse004</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_diffuse005_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair_diffuse005</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_diffuse006_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair_diffuse006</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_diffuse007_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair_diffuse007</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_diffuse008_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair_diffuse008</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_diffuse009_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair_diffuse009</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_diffuse010_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair_diffuse010</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_diffuse011_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair_diffuse011</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_diffuse012_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair_diffuse012</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_diffuse013_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair_diffuse013</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_diffuse014_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair_diffuse014</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_diffuse015_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair_diffuse015</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_diffuse016_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair_diffuse016</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_diffuse017_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair_diffuse017</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_diffuse018_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair_diffuse018</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_diffuse019_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair_diffuse019</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_diffuse020_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair_diffuse020</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Chair_diffuse021_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Chair_diffuse021</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Chair_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Dumpster_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Dumpster_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Dumpster_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Fence_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Fence_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Fence_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Fence_diffuse002_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Fence_diffuse002</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Fence_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Fence_diffuse003_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Fence_diffuse003</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Fence_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Fence_diffuse004_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Fence_diffuse004</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Fence_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_FlowerBank_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_FlowerBank_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_FlowerBank_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_FlowerBankFlowers_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_FlowerBankFlowers_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_FlowerBankFlowers_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_GarbageCan_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_GarbageCan_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_GarbageCan_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_GarbageCan_diffuse002_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_GarbageCan_diffuse002</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_GarbageCan_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_GarbageCan_diffuse003_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_GarbageCan_diffuse003</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_GarbageCan_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_GarbageCan_diffuse004_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_GarbageCan_diffuse004</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_GarbageCan_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_GarbageCan_diffuse005_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_GarbageCan_diffuse005</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_GarbageCan_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_GarbageCan_diffuse006_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_GarbageCan_diffuse006</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_GarbageCan_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_GarbageCan_diffuse007_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_GarbageCan_diffuse007</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_GarbageCan_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_GarbageCan_diffuse008_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_GarbageCan_diffuse008</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_GarbageCan_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_GarbageCan_diffuse009_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_GarbageCan_diffuse009</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_GarbageCan_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_MainFountain_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_MainFountain_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_MainFountain_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "prop_MainTree_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_MainTree_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_MainTree_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_MenuCard_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_MenuCard_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_MenuCard_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_PaintersEasel_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_PaintersEasel_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_PaintersEasel_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Paintings_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Paintings_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Paintings_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Paintings_diffuse002_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Paintings_diffuse002</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Paintings_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Paintings_diffuse003_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Paintings_diffuse003</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Paintings_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Parasol_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Parasol_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Parasol_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Parasol_diffuse002_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Parasol_diffuse002</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Parasol_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Parasol_diffuse003_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Parasol_diffuse003</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Parasol_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Parasol_diffuse004_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Parasol_diffuse004</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Parasol_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_plant1_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_plant1_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_plant1_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "prop_plant2_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_plant2_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_plant2_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "prop_plant2_diffuse002_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_plant2_diffuse002</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_plant2_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "prop_sateliet1_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_sateliet1_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_sateliet1_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "prop_sateliet1_diffuse002_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_sateliet1_diffuse002</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_sateliet1_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "prop_sateliet1_diffuse003_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_sateliet1_diffuse003</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_sateliet1_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "prop_satelite2_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_satelite2_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_satelite2_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "prop_satelite2_diffuse002_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_satelite2_diffuse002</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_satelite2_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "prop_satelite2_diffuse003_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_satelite2_diffuse003</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_satelite2_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "prop_StreetLantern_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_StreetLantern_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_StreetLantern_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "prop_StreetLantern_diffuse002_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_StreetLantern_diffuse002</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_StreetLantern_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_TabacSign_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_TabacSign_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_TabacSign_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Table1_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Table1_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Table1_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Table1_diffuse002_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Table1_diffuse002</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Table1_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Table1_diffuse003_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Table1_diffuse003</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Table1_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Table1_diffuse004_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Table1_diffuse004</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Table1_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Table1_diffuse005_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Table1_diffuse005</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Table1_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_Table1_diffuse006_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_Table1_diffuse006</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_Table1_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_TableOne_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_TableOne_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_TableOne_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_TableOne_diffuse002_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_TableOne_diffuse002</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_TableOne_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_TableOne_diffuse003_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_TableOne_diffuse003</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_TableOne_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "prop_TrashSac_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_TrashSac_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_TrashSac_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "prop_TrashSac_diffuse002_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_TrashSac_diffuse002</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_TrashSac_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "prop_TrashSac_diffuse003_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_TrashSac_diffuse003</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_TrashSac_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "prop_TrashSac_diffuse004_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_TrashSac_diffuse004</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_TrashSac_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "Prop_VisitCard_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>Prop_VisitCard_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/Prop_VisitCard_diffuse.jpg</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "prop_WallLantern_diffuse001_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_WallLantern_diffuse001</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_WallLantern_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "prop_WallLantern_diffuse002_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_WallLantern_diffuse002</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_WallLantern_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name= "prop_WallLantern_diffuse003_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/cityscene.dae</uri>
+            <submesh>
+              <name>prop_WallLantern_diffuse003</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/prop_WallLantern_diffuse.png</albedo_map>
+              <metalness>0</metalness>
+              <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
             </metal>
           </pbr>
         </material>
