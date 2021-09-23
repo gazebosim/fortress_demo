@@ -23,6 +23,17 @@
       filename="ignition-gazebo-scene-broadcaster-system"
       name="ignition::gazebo::systems::SceneBroadcaster">
     </plugin>
+    <plugin
+      filename="ignition-gazebo-buoyancy-system"
+      name="ignition::gazebo::systems::Buoyancy">
+      <graded_buoyancy>
+        <default_density>1000</default_density>
+        <density_change>
+          <above_depth>-1.7</above_depth>
+          <density>1</density>
+        </density_change>
+      </graded_buoyancy>
+    </plugin>
 
     <scene>
       <grid>false</grid>
@@ -250,7 +261,7 @@
 
     <include>
       <name>tethys</name>
-      <pose>30 30 -10 0 0 0</pose>
+      <pose>10 20 -1.7 0 0 0</pose>
       <uri>https://fuel.ignitionrobotics.org/1.0/accurrent/models/MBARI Tethys LRAUV</uri>
 
       <!-- Joint controllers -->
@@ -338,6 +349,18 @@
         <mQ>0</mQ>
         <nRR>-632.698957</nRR>
         <nR>0</nR>
+      </plugin>
+
+      <plugin
+        filename="libignition-gazebo-buoyancy-engine-system.so"
+        name="ignition::gazebo::systems::BuoyancyEngine">
+        <link_name>base_link</link_name>
+        <namespace>tethys</namespace>
+        <min_volume>0.0</min_volume>
+        <neutral_volume>0.002</neutral_volume>
+        <default_volume>0.002</default_volume>
+        <max_volume>0.003</max_volume>
+        <max_inflation_rate>0.0003</max_inflation_rate>
       </plugin>
 
     </include>
