@@ -28,6 +28,7 @@
           <pbr>
             <metal>
               <albedo>0 0 1 1</albedo>
+              <albedo_map>materials/textures/Water_Albedo.jpg</albedo_map>
               <normal_map>materials/textures/Water_Normal.jpg</normal_map>
               <metalness>0</metalness>
               <roughness>0</roughness>

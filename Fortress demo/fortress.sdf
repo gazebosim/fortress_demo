@@ -26,6 +26,7 @@
 
     <scene>
       <grid>false</grid>
+      <ambient>1 1 1</ambient>
     </scene>
 
     <!-- Saint-Guillhem-le-Désert -->
@@ -50,7 +51,7 @@
 
         <engine>ogre2</engine>
         <scene>scene</scene>
-        <ambient_light>0.4 0.4 0.4</ambient_light>
+        <ambient_light>1 1 </ambient_light>
         <background_color>0.8 0.8 0.8</background_color>
         <sky></sky>
         <camera_pose>28.186 14.29 8.28 0 0.3 -2.8</camera_pose>
@@ -196,21 +197,6 @@
       </plugin>
 
     </gui>
-    
-      <light type="directional" name="sun">
-        <cast_shadows>true</cast_shadows>
-        <pose>0 0 10 0 0.75 0</pose>
-        <diffuse>0.8 0.8 0.8 1</diffuse>
-        <specular>0.2 0.2 0.2 1</specular>
-        <intensity>1.3</intensity>
-        <attenuation>
-          <range>1000</range>
-          <constant>0.9</constant>
-          <linear>0.01</linear>
-          <quadratic>0.001</quadratic>
-        </attenuation>
-        <direction>-0.5 0.1 -0.9</direction>
-      </light>
 
     <include>
       <uri>
