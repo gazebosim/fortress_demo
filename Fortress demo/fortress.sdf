@@ -203,6 +203,12 @@
       </uri>
     </include>
 
+    <include>
+      <uri>
+        Fortress heightmap
+      </uri>
+    </include>
+
     <!--TODO model name="turbidity_generator">
         <pose>0 0 0 0 0 0</pose>
         <static>true</static>
