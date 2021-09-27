@@ -233,7 +233,9 @@
 
     <include>
       <name>CleanerBot</name>
-      <pose>4.92 4.89 0.02 0 -0.02 1.37</pose>
+      <pose degrees="true" rotation_format="euler_rpy">
+        4.92 4.89 0.02   0 -1.15 78.5
+      </pose>
       <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/CleanerBot1</uri>
 
       <plugin
@@ -250,7 +252,10 @@
 
     <include>
       <name>tethys</name>
-      <pose>30 30 -10 0 0 0</pose>
+      <pose degrees="false" rotation_format="quat_xyzw">
+        30 30 -10
+        0 0 0 1
+      </pose>
       <uri>https://fuel.ignitionrobotics.org/1.0/accurrent/models/MBARI Tethys LRAUV</uri>
 
       <!-- Joint controllers -->
