@@ -1753,6 +1753,7 @@
             </submesh>
           </mesh>
         </geometry>
+        <transparency>0.005</transparency>
         <material>
           <diffuse>1.0 1.0 1.0</diffuse>
           <specular>1.0 1.0 1.0</specular>
@@ -1761,9 +1762,9 @@
               <albedo_map>materials/textures/Water_Water_BaseColor.png</albedo_map>
               <normal_map>materials/textures/Water_Water_Normal.png</normal_map>
               <!--roughness_map>materials/textures/Water_Water_Roughness.png</roughness_map-->
-              <environment_map>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/Reflective table/1/files/materials/textures/DepotEnvMap.dds</environment_map>
+              <environment_map>materials/textures/skybox_lowres.dds</environment_map>
               <roughness>0</roughness>
-              <metalness>0</metalness>
+              <metalness>0.5</metalness>
             </metal>
           </pbr>
         </material>
