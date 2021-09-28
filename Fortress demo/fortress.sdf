@@ -200,6 +200,13 @@
         </ignition-gui>
       </plugin>
 
+      <plugin filename="ImageDisplay" name="Image Display">
+        <ignition-gui>
+          <property type="string" key="state">docked_collapsed</property>
+        </ignition-gui>
+        <topic>semantic/colored_map</topic>
+      </plugin>
+
       <plugin filename="Teleop" name="Teleop">
         <ignition-gui>
           <property type="string" key="state">docked_collapsed</property>
@@ -377,6 +384,28 @@
         <wheel_radius>0.1</wheel_radius>
         <odom_publish_frequency>1</odom_publish_frequency>
       </plugin>
+
+      <experimental:params>
+        <sensor element_id="body" name="segmentation_sensor" type="segmentation" action="add">
+          <pose>.5 0 1.4 0 0 0</pose>
+          <topic>semantic</topic>
+          <camera>
+            <segmentation_type>semantic</segmentation_type>
+            <horizontal_fov>1.57</horizontal_fov>
+            <image>
+              <width>800</width>
+              <height>600</height>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>100</far>
+            </clip>
+          </camera>
+          <always_on>1</always_on>
+          <update_rate>30</update_rate>
+          <visualize>true</visualize>
+        </sensor>
+      </experimental:params>
     </include>
 
     <include>

@@ -39,6 +39,9 @@
         </material>
       </visual>
       <visual name= "prop_MainTree_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>10</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -273,6 +276,9 @@
         </material>
       </visual>
       <visual name= "Prop_GarbageCan_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>20</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -351,6 +357,9 @@
         </material>
       </visual>
       <visual name= "Prop_Parasol_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>30</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -507,6 +516,9 @@
         </material>
       </visual>
       <visual name= "Prop_Table1_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>40</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -533,6 +545,9 @@
         </material>
       </visual>
       <visual name= "Prop_Chair_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>50</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -559,6 +574,9 @@
         </material>
       </visual>
       <visual name= "Prop_Bench_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>60</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -1079,6 +1097,9 @@
         </material>
       </visual>
       <visual name= "prop_StreetLantern_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>70</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
