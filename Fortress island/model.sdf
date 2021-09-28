@@ -1753,6 +1753,7 @@
             </submesh>
           </mesh>
         </geometry>
+        <transparency>0.005</transparency>
         <material>
           <diffuse>1.0 1.0 1.0</diffuse>
           <specular>1.0 1.0 1.0</specular>
@@ -1763,7 +1764,7 @@
               <!--roughness_map>materials/textures/Water_Water_Roughness.png</roughness_map-->
               <environment_map>materials/textures/skybox_lowres.dds</environment_map>
               <roughness>0</roughness>
-              <metalness>0</metalness>
+              <metalness>0.5</metalness>
             </metal>
           </pbr>
         </material>
