@@ -1761,7 +1761,7 @@
               <albedo_map>materials/textures/Water_Water_BaseColor.png</albedo_map>
               <normal_map>materials/textures/Water_Water_Normal.png</normal_map>
               <!--roughness_map>materials/textures/Water_Water_Roughness.png</roughness_map-->
-              <environment_map>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/Reflective table/1/files/materials/textures/DepotEnvMap.dds</environment_map>
+              <environment_map>materials/textures/skybox_lowres.dds</environment_map>
               <roughness>0</roughness>
               <metalness>0</metalness>
             </metal>
