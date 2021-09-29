@@ -7,7 +7,7 @@
         <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
-            <uri>meshes/cityscene.dae</uri>
+            <uri>meshes/cityscene_no_water.dae</uri>
             <scale>1.0 1.0 1.0</scale>
           </mesh>
         </geometry>
