@@ -35,6 +35,9 @@
         </material>
       </visual>
       <visual name= "prop_MainTree_diffuse001_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>10</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -343,6 +346,9 @@
         </material>
       </visual>
       <visual name= "Prop_GarbageCan_diffuse001_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>20</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -585,6 +591,9 @@
         </material>
       </visual>
       <visual name= "Prop_Parasol_diffuse001_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>30</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -849,6 +858,9 @@
         </material>
       </visual>
       <visual name= "Prop_Table1_diffuse001_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>40</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -871,6 +883,9 @@
         </material>
       </visual>
       <visual name= "Prop_Table1_diffuse002_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>40</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -893,6 +908,9 @@
         </material>
       </visual>
       <visual name= "Prop_Table1_diffuse003_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>40</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -915,6 +933,9 @@
         </material>
       </visual>
       <visual name= "Prop_Table1_diffuse004_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>40</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -937,6 +958,9 @@
         </material>
       </visual>
       <visual name= "Prop_Table1_diffuse005_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>40</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -959,6 +983,9 @@
         </material>
       </visual>
       <visual name= "Prop_Table1_diffuse006_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>40</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -981,6 +1008,9 @@
         </material>
       </visual>
       <visual name= "Prop_Chair_diffuse001_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>50</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -1003,6 +1033,9 @@
         </material>
       </visual>
       <visual name= "Prop_Chair_diffuse002_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>50</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -1025,6 +1058,9 @@
         </material>
       </visual>
       <visual name= "Prop_Chair_diffuse003_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>50</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -1047,6 +1083,9 @@
         </material>
       </visual>
       <visual name= "Prop_Chair_diffuse004_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>50</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -1069,6 +1108,9 @@
         </material>
       </visual>
       <visual name= "Prop_Chair_diffuse005_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>50</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -1091,6 +1133,9 @@
         </material>
       </visual>
       <visual name= "Prop_Chair_diffuse006_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>50</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -1113,6 +1158,9 @@
         </material>
       </visual>
       <visual name= "Prop_Chair_diffuse007_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>50</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -1135,6 +1183,9 @@
         </material>
       </visual>
       <visual name= "Prop_Chair_diffuse008_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>50</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -1157,6 +1208,9 @@
         </material>
       </visual>
       <visual name= "Prop_Chair_diffuse009_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>50</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -1179,6 +1233,9 @@
         </material>
       </visual>
       <visual name= "Prop_Chair_diffuse010_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>50</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -1201,6 +1258,9 @@
         </material>
       </visual>
       <visual name= "Prop_Chair_diffuse011_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>50</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -1223,6 +1283,9 @@
         </material>
       </visual>
       <visual name= "Prop_Chair_diffuse012_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>50</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -1245,6 +1308,9 @@
         </material>
       </visual>
       <visual name= "Prop_Chair_diffuse013_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>50</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -1267,6 +1333,9 @@
         </material>
       </visual>
       <visual name= "Prop_Chair_diffuse014_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>50</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -1289,6 +1358,9 @@
         </material>
       </visual>
       <visual name= "Prop_Chair_diffuse015_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>50</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -1443,6 +1515,9 @@
         </material>
       </visual>
       <visual name= "Prop_Bench_diffuse001_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>60</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -1465,6 +1540,9 @@
         </material>
       </visual>
       <visual name= "Prop_Bench_diffuse002_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>60</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -1487,6 +1565,9 @@
         </material>
       </visual>
       <visual name= "Prop_Bench_diffuse003_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>60</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -2191,6 +2272,9 @@
         </material>
       </visual>
       <visual name= "prop_StreetLantern_diffuse001_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>70</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -2213,6 +2297,9 @@
         </material>
       </visual>
       <visual name= "prop_StreetLantern_diffuse002_visual">
+        <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
+          <label>70</label>
+        </plugin>
         <geometry>
           <mesh>
             <uri>meshes/cityscene.dae</uri>
@@ -2950,6 +3037,7 @@
             </submesh>
           </mesh>
         </geometry>
+        <transparency>0.005</transparency>
         <material>
           <diffuse>1.0 1.0 1.0</diffuse>
           <specular>1.0 1.0 1.0</specular>
@@ -2958,8 +3046,11 @@
               <albedo>0 0 1 1</albedo>
               <albedo_map>materials/textures/Water_Albedo.jpg</albedo_map>
               <normal_map>materials/textures/Water_Normal.jpg</normal_map>
-              <metalness>0</metalness>
+              <!--albedo_map>materials/textures/Water_Water_BaseColor.png</albedo_map>
+              <normal_map>materials/textures/Water_Water_Normal.png</normal_map-->
+              <environment_map>materials/textures/skybox_lowres.dds</environment_map>
               <roughness>0</roughness>
+              <metalness>0.5</metalness>
             </metal>
           </pbr>
         </material>
