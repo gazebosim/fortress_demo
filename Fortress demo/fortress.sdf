@@ -191,10 +191,11 @@
         <ignition-gui>
           <property type="string" key="state">docked_collapsed</property>
         </ignition-gui>
-        <entity_name>tethys</entity_name>
-        <color>0 0 1</color>
-        <maximum_points>10000</maximum_points>
-        <minimum_distance>0.5</minimum_distance>
+        <entity_name>Buoy</entity_name>
+        <offset>0 0 2</offset>
+        <color>1 1 1</color>
+        <maximum_points>100</maximum_points>
+        <minimum_distance>0.01</minimum_distance>
       </plugin>
 
       <plugin filename="ViewAngle" name="View angle">
