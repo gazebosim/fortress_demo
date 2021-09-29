@@ -3037,7 +3037,7 @@
             </submesh>
           </mesh>
         </geometry>
-        <transparency>0.005</transparency>
+        <transparency>0.05</transparency>
         <material>
           <diffuse>1.0 1.0 1.0</diffuse>
           <specular>1.0 1.0 1.0</specular>
