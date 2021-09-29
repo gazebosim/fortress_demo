@@ -198,12 +198,6 @@
         <minimum_distance>0.01</minimum_distance>
       </plugin>
 
-      <plugin filename="ViewAngle" name="View angle">
-        <ignition-gui>
-          <property type="string" key="state">docked_collapsed</property>
-        </ignition-gui>
-      </plugin>
-
       <plugin filename="ImageDisplay" name="Image Display">
         <ignition-gui>
           <property type="string" key="state">docked_collapsed</property>
