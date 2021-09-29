@@ -3020,7 +3020,7 @@
             <metal>
               <albedo_map>materials/textures/Border_Border_BaseColor.jpeg</albedo_map>
               <roughness_map>materials/textures/Border_Border_Roughness.png</roughness_map>
-              <normal_map>materials/textures/Border_Border_Normal.png</normal_map>
+              <normal_map>materials/textures/Border_Border_Normal.jpeg</normal_map>
               <metalness>0</metalness>
               <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
             </metal>
