@@ -240,37 +240,9 @@
 
     <include>
       <uri>
-        Fortress heightmap
+        https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Fortress heightmap
       </uri>
     </include>
-
-    <!--TODO model name="turbidity_generator">
-        <pose>0 0 0 0 0 0</pose>
-        <static>true</static>
-        <link name="turbidity_link">
-            <particle_emitter name="emitter" type="point">
-                <pose>0 0 -12 0 0 0</pose>
-                <emitting>true</emitting>
-                <size>100 100 20</size>
-                <particle_size>100 100 20</particle_size>
-                <lifetime>10</lifetime>
-                <min_velocity>0</min_velocity>
-                <max_velocity>1</max_velocity>
-                <color_start>0 0.4 0.5 0.2</color_start>
-                <color_end>0 0.8 0.9 0.2</color_end>
-                <scale_rate>1</scale_rate>
-                <rate>1</rate>
-                <material>
-                    <diffuse>0.7 0.7 0.7 0.5</diffuse>
-                    <pbr>
-                        <metal>
-                            <albedo_map>materials/textures/smoke.png</albedo_map>
-                        </metal>
-                    </pbr>
-                </material>
-            </particle_emitter>
-        </link>
-    </model-->
 
     <model name="sdf_pose_examples">
       <!-- partial angle unstable box and sphere -->
@@ -683,7 +655,7 @@
       <name>x1_original</name>
       <pose degrees="true">10.508200 -5.624940 2.832280 0 0 180</pose>
       <uri>
-        x1 ugv
+        https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/X1 UGV - Fortress param demo
       </uri>
     </include>
 
@@ -691,7 +663,7 @@
       <name>x1_modified</name>
       <pose degrees="true">10.508200 -3.955190 2.832280 0 0 180</pose>
       <uri>
-        x1 ugv
+        https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/X1 UGV - Fortress param demo
       </uri>
 
       <experimental:params>
