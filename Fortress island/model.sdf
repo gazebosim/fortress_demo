@@ -3018,9 +3018,9 @@
           <specular>1.0 1.0 1.0</specular>
           <pbr>
             <metal>
-              <albedo_map>materials/textures/Border_Border_BaseColor.jpeg</albedo_map>
+              <albedo_map>materials/textures/Border_Border_BaseColor.jpg</albedo_map>
               <roughness_map>materials/textures/Border_Border_Roughness.png</roughness_map>
-              <normal_map>materials/textures/Border_Border_Normal.jpeg</normal_map>
+              <normal_map>materials/textures/Border_Border_Normal.jpg</normal_map>
               <metalness>0</metalness>
               <light_map uv_set="1">materials/textures/Lightmap.png</light_map>
             </metal>
@@ -3046,8 +3046,6 @@
               <albedo>0 0 1 1</albedo>
               <albedo_map>materials/textures/Water_Albedo.jpg</albedo_map>
               <normal_map>materials/textures/Water_Normal.jpg</normal_map>
-              <!--albedo_map>materials/textures/Water_Water_BaseColor.png</albedo_map>
-              <normal_map>materials/textures/Water_Water_Normal.jpeg</normal_map-->
               <environment_map>materials/textures/skybox_lowres.dds</environment_map>
               <roughness>0</roughness>
               <metalness>0.5</metalness>
