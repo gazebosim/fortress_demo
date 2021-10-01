@@ -7,14 +7,14 @@
       <visual name="panda_link0_visual">
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/visual/link0.dae</uri>
+            <uri>meshes/visual/link0.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <collision name="panda_link0_collision">
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/collision/link0.stl</uri>
+            <uri>meshes/collision/link0.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -44,14 +44,14 @@
       <visual name="panda_link1_visual">
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/visual/link1.dae</uri>
+            <uri>meshes/visual/link1.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <collision name="panda_link1_collision">
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/collision/link1.stl</uri>
+            <uri>meshes/collision/link1.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -81,14 +81,14 @@
       <visual name="panda_link2_visual">
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/visual/link2.dae</uri>
+            <uri>meshes/visual/link2.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <collision name="panda_link2_collision">
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/collision/link2.stl</uri>
+            <uri>meshes/collision/link2.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -118,14 +118,14 @@
       <visual name="panda_link3_visual">
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/visual/link3.dae</uri>
+            <uri>meshes/visual/link3.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <collision name="panda_link3_collision">
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/collision/link3.stl</uri>
+            <uri>meshes/collision/link3.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -155,14 +155,14 @@
       <visual name="panda_link4_visual">
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/visual/link4.dae</uri>
+            <uri>meshes/visual/link4.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <collision name="panda_link4_collision">
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/collision/link4.stl</uri>
+            <uri>meshes/collision/link4.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -192,14 +192,14 @@
       <visual name="panda_link5_visual">
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/visual/link5.dae</uri>
+            <uri>meshes/visual/link5.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <collision name="panda_link5_collision">
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/collision/link5.stl</uri>
+            <uri>meshes/collision/link5.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -229,14 +229,14 @@
       <visual name="panda_link6_visual">
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/visual/link6.dae</uri>
+            <uri>meshes/visual/link6.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <collision name="panda_link6_collision">
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/collision/link6.stl</uri>
+            <uri>meshes/collision/link6.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -266,14 +266,14 @@
       <visual name="panda_link7_visual">
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/visual/link7.dae</uri>
+            <uri>meshes/visual/link7.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <collision name="panda_link7_collision">
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/collision/link7.stl</uri>
+            <uri>meshes/collision/link7.stl</uri>
           </mesh>
         </geometry>
         <surface>

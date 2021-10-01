@@ -9,7 +9,7 @@
         <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/visual/hand.dae</uri>
+            <uri>meshes/visual/hand.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -17,7 +17,7 @@
         <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/collision/hand.stl</uri>
+            <uri>meshes/collision/hand.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -47,14 +47,14 @@
       <visual name="panda_leftfinger_visual">
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/visual/finger.dae</uri>
+            <uri>meshes/visual/finger.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <collision name="panda_leftfinger_collision">
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/collision/finger.stl</uri>
+            <uri>meshes/collision/finger.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -85,7 +85,7 @@
         <pose>0 0 0 0 0 3.141592653589793</pose>
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/visual/finger.dae</uri>
+            <uri>meshes/visual/finger.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -93,7 +93,7 @@
         <pose>0 0 0 0 0 3.141592653589793</pose>
         <geometry>
           <mesh>
-            <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/panda with ignition position controller model/1/files/meshes/collision/finger.stl</uri>
+            <uri>meshes/collision/finger.stl</uri>
           </mesh>
         </geometry>
         <surface>

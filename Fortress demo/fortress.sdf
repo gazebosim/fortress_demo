@@ -362,7 +362,9 @@
     <model name="robot_arm_with_gripper">
       <pose>4 -9.5 3.38   0 0 0</pose>
       <include>
-        <uri>panda_arm</uri>
+        <uri>
+          https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Panda arm - Fortress merge include demo
+        </uri>
         <name>arm</name>
       </include>
       <joint name="fix_to_world" type="fixed">
@@ -374,7 +376,9 @@
         <child>gripper</child>
       </joint>
       <include>
-        <uri>panda_hand</uri>
+        <uri>
+          https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Panda hand - Fortress merge include demo
+        </uri>
         <name>gripper</name>
         <placement_frame>mount_point</placement_frame>
         <pose relative_to="arm::gripper_mount"/>
@@ -384,7 +388,9 @@
     <model name="robot_arm_with_gripper_merged">
       <pose>0.917345 -9.5 3.38   0 0 0</pose>
       <include merge="true">
-        <uri>panda_arm</uri>
+        <uri>
+          https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Panda arm - Fortress merge include demo
+        </uri>
         <name>test_arm</name>
       </include>
       <joint name="fix_to_world" type="fixed">
@@ -396,7 +402,9 @@
         <child>mount_point</child>
       </joint>
       <include merge="true">
-        <uri>panda_hand</uri>
+        <uri>
+          https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Panda hand - Fortress merge include demo
+        </uri>
         <name>gripper</name>
         <placement_frame>mount_point</placement_frame>
         <pose relative_to="gripper_mount" />
